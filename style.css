@@ -1,0 +1,130 @@
+@charset "UTF-8";
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header {
+  padding: 0;
+  margin: 35px 0 0 0;
+  font-family: "Proza Libre", sans-serif;
+}
+header hr {
+  width: 500px;
+  height: 1px;
+  margin-top: 0;
+  padding: 0;
+  border: 0;
+  background-image: linear-gradient(to right, rgba(247, 93, 89, 0.2), #f75d59, rgba(247, 93, 89, 0.2));
+}
+header form {
+  margin-top: 15px;
+}
+header form .button, header form .buttonActive {
+  font-size: 1.2em;
+  padding: 8px 12px;
+}
+header form .button:nth-of-type(2), header form .buttonActive:nth-of-type(2) {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+header form .buttonActive {
+  background-color: #dae2eb;
+  border: 1px solid #cdcbdb;
+}
+header form input[type=button]:focus {
+  outline: none;
+}
+header form input[type=button]:active {
+  outline: none;
+}
+
+main {
+  position: relative;
+  margin-top: 25px;
+}
+
+#title {
+  margin: 0;
+  color: #4f4b6b;
+}
+
+#description {
+  display: block;
+  margin: 5px 0 15px 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: #2c5489;
+}
+
+#chart {
+  align-items: center;
+  font: 5px sans-serif;
+  fill: white;
+}
+
+.cell {
+  text-align: center;
+}
+
+.cell-text {
+  font-size: 10px;
+  user-select: none;
+}
+
+tspan {
+  overflow: hidden;
+  padding: 5px;
+}
+
+.d3Tip {
+  background-color: #484562;
+  border-radius: 3px;
+  color: white;
+  line-height: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.d3Tip:before {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 20px;
+  width: 100%;
+  line-height: 1;
+  color: #484562;
+  content: "▲";
+  position: absolute;
+  text-align: center;
+}
+
+.d3Tip.s:before {
+  margin: 0;
+  top: -15px;
+  left: 0%;
+}
+
+.hover-text {
+  list-style: none;
+  font-size: 0.9em;
+  padding: 0;
+  color: white;
+}
+.hover-text li span {
+  color: #C2DFFF;
+  margin-right: 5px;
+}
+
+.legend {
+  padding-bottom: 25px;
+}
+
+.legendItem {
+  margin-bottom: 15px;
+}
+
+.legendText {
+  stroke: #1f3d63;
+}
